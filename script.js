@@ -14,13 +14,13 @@ const setDate = () => {
    secondsHand.style.transform = `rotate(${secondsDegrees}deg)`;
 
    const minutes = date.getMinutes();
-   // console.log(minutes)
+   console.log(minutes)
    const minutesDegrees = ((minutes / 60) * 360) + 90; // Match minutes to degrees so minutes hand  moves to next number at 60 seconds
    minutesHand.style.transform = `rotate(${minutesDegrees}deg)`;
 
    const hour = date.getHours(); // previous notes not valid ; function should be getHours()
-   console.log(hour)
-   const hourDegrees = ((minutes / 12) * 360) + 90; // dived minutes by 12 as max hours on a clock is 12. Match hour to degrees so hour hand  circles 360 degrees at 60 minutes
+  //  console.log(hour)
+   const hourDegrees = ((hour / 12) * 360) + 90; // divide hour by 12 as max hours on a clock is 12. Match hour to degrees so hourHand  moves to next hour number at 60 minutes
    hourHand.style.transform = `rotate(${hourDegrees}deg)`;
   }
 

@@ -1,24 +1,23 @@
 body{
     min-height: 100vh;
     display: flex;
-    justify-content: center;
     text-align: center;
     background-image: url('https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=867&q=80');
     background-size: cover;
-    margin: auto;
-    box-sizing: border-box;
+    /* margin: auto;
+    box-sizing: border-box; */
     
 }
 
 .clock{
     border: solid 25px black;
     border-radius: 50%;
-    /* background-color: blue; */
     height: 250px;
     width: 250px;
     margin: 12%; 
     margin-right: 50%;
-    position:relative
+    position:relative;
+    box-shadow: inset;
 
 }
 
@@ -55,15 +54,15 @@ body{
 
 .minutesHand{
     /* background: purple;  */
-    height: 3px; 
-    width: 40%; 
-    left: 10%; 
+    height: 3.5px; 
+    width: 35%; 
+    left: 14%; 
 }
 
 .hourHand{
-    height: 6px; 
-    width: 30%;   
-    left: 20%; 
+    height: 5px; 
+    width: 26%;   
+    left: 23%; 
 }
 
 .text{
