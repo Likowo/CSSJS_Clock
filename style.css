@@ -1,23 +1,25 @@
 body{
-    max-height: 100vh;
-    background-color: aqua;
+    min-height: 100vh;
     display: flex;
     text-align: center;
+    /* background-color: aqua; */
+    background-image: url('https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=867&q=80');
+    background-size: cover;
 }
 
 .clock{
-    border: solid 8px black;
+    border: solid 25px black;
     border-radius: 50%;
-    background-color: blue;
+    /* background-color: blue; */
     height: 250px;
     width: 250px;
     margin: 15%; 
 }
 
 .faceOfClock{
-    border: solid 5px yellow;
+    border: solid 8px whitesmoke;
     border-radius: 50%;
-    background-color: blue;
+    background-color:brown;
     height: 243px;
     width: 240px; 
     position: relative;  
@@ -25,9 +27,9 @@ body{
 
 #clockHand{
     border: solid 1px black;
-    background-color: orange;
-    width: 50%;
-    height: 6px;
+    background-color: rgb(26, 18, 4);
+    /* width: 50%;
+    height: 6px; */
     position: absolute;
     top: 50%;
     transform-origin: 100%; /* allows clock hands to move in cicle*/
@@ -37,12 +39,14 @@ body{
 }
 
 .secondsHand{
-    background-color: red;
+    /* background-color: red; */
     height:2px ; 
+    width: 42%; 
+    left: 5%;
 }
 
 .minutesHand{
-    background: purple; 
+    /* background: purple;  */
     height: 3px; 
     width: 40%; 
     left: 10%; 
