@@ -5,6 +5,7 @@ body{
     /* background-color: aqua; */
     background-image: url('https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=867&q=80');
     background-size: cover;
+    
 }
 
 .clock{
@@ -69,6 +70,30 @@ body{
     text-align: center;
     color:yellowgreen;
     font-size: 25px;
-    /* position: relative;   */
+}
 
+.title{
+    color: aquamarine;
+    font-size: 45px;
+    animation: blink 2s infinite;
+    animation-timing-function: step-start;
+    animation-fill-mode: both;
+}
+
+@keyframes blink {
+    0%{
+        color: aquamarine;
+      }
+    25%{
+        color: green;
+    }
+
+    75%{
+        color:aqua;
+    }
+
+    100% {
+       color: red;
+    
+      }
 }
