@@ -1,0 +1,31 @@
+body{
+    min-height: 100vh;
+    background-color: aqua;
+    display: flex;
+}
+
+.clock{
+    border: solid 6px red;
+    border-radius: 50%;
+    background-color: blue;
+    height: 50vh;
+    width: 50vw;
+}
+
+
+.faceOfClock{
+    border: solid 5px yellow;
+    border-radius: 50%;
+     height: 80vh;
+    width: 40vh;  
+    position: relative;  
+}
+
+#clockHand{
+    border: solid 1px black;
+    width: 50%;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+
+}
