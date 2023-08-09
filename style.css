@@ -1,23 +1,24 @@
 body{
-    min-height: 100vh;
+    max-height: 100vh;
     background-color: aqua;
     display: flex;
 }
 
 .clock{
-    border: solid 6px red;
+    border: solid 8px black;
     border-radius: 50%;
     background-color: blue;
-    height: 50vh;
-    width: 50vw;
+    height: 250px;
+    width: 250px;
+    margin: 15%; 
 }
-
 
 .faceOfClock{
     border: solid 5px yellow;
     border-radius: 50%;
-     height: 80vh;
-    width: 40vh;  
+    background-color: blue;
+    height: 243px;
+    width: 240px; 
     position: relative;  
 }
 
