@@ -57,3 +57,18 @@ body{
     width: 30%;   
     left: 20%; 
 }
+
+.text{
+    /* border: solid 2px green; */
+    border-radius: 50%;
+    height: 225px;
+    width: 240px; 
+    margin: 2px;
+    padding-top: 5px;
+    line-height: 2.5;
+    text-align: center;
+    color:yellowgreen;
+    font-size: 25px;
+    /* position: relative;   */
+
+}
