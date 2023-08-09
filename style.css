@@ -1,10 +1,12 @@
 body{
     min-height: 100vh;
     display: flex;
+    justify-content: center;
     text-align: center;
-    /* background-color: aqua; */
     background-image: url('https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=867&q=80');
     background-size: cover;
+    margin: auto;
+    box-sizing: border-box;
     
 }
 
@@ -14,28 +16,33 @@ body{
     /* background-color: blue; */
     height: 250px;
     width: 250px;
-    margin: 15%; 
+    margin: 12%; 
+    margin-right: 50%;
+    position:relative
+
 }
 
 .faceOfClock{
-    border: solid 8px whitesmoke;
+    border: solid 8px brown;
     border-radius: 50%;
-    background-color:brown;
+    /* background-color:brown; */
+    background-image: url('https://illustoon.com/photo/5054.png');
+    background-position: center;
+    background-size: contain;
     height: 243px;
     width: 240px; 
-    position: relative;  
+    position: relative; 
+    transform: translateY(-3px);/* accounts for the height of the clock hands */ 
 }
 
 #clockHand{
     border: solid 1px black;
     background-color: rgb(26, 18, 4);
-    /* width: 50%;
-    height: 6px; */
     position: absolute;
     top: 50%;
-    transform-origin: 100%; /* allows clock hands to move in cicle*/
+    transform-origin: 100%; /* allows clock hands to rotate center on the x-axis*/
     transform:rotate(90deg); /* moves hands from horizontal to vertical position*/
-    transition: all 0.05s; /* Enables clock hands to move at a particular speed 0.5seconds*/ 
+    transition: all 0.05s; /* Enables clock hands to move at a particular speed 0.05seconds*/ 
     transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
@@ -43,7 +50,7 @@ body{
     /* background-color: red; */
     height:2px ; 
     width: 42%; 
-    left: 5%;
+    left: 8%;
 }
 
 .minutesHand{
@@ -65,16 +72,20 @@ body{
     height: 225px;
     width: 240px; 
     margin: 2px;
+    margin-top: 2%;
     padding-top: 5px;
-    line-height: 2.5;
+    line-height: 4;
+    /* line-break: normal; */
     text-align: center;
-    color:yellowgreen;
-    font-size: 25px;
+    color:orange;
+    font-size: 15px;
+    font-weight: bolder;
 }
 
 .title{
     color: aquamarine;
     font-size: 45px;
+    margin: 4%;
     animation: blink 2s infinite;
     animation-timing-function: step-start;
     animation-fill-mode: both;
