@@ -71,13 +71,21 @@ body{
     height: 225px;
     width: 240px; 
     margin: 2px;
-    margin-top: 2%;
+    margin-top: 28%;
     padding-top: 5px;
     line-height: 4;
     text-align: center;
     color:orange;
     font-size: 15px;
     font-weight: bolder;
+}
+
+.textSections {
+    /* border: solid 2px; */
+    display: flex;
+    justify-content: center;
+    line-height: 1.4;
+    padding-inline: 1%;
 }
 
 .title{
@@ -106,3 +114,7 @@ body{
     
       }
 }
+
+.myName {
+    font-style: italic;
+    font-weight: bold;

@@ -14,7 +14,7 @@ const setDate = () => {
    secondsHand.style.transform = `rotate(${secondsDegrees}deg)`;
 
    const minutes = date.getMinutes();
-   console.log(minutes)
+  //  console.log(minutes)
    const minutesDegrees = ((minutes / 60) * 360) + 90; // Match minutes to degrees so minutes hand  moves to next number at 60 seconds
    minutesHand.style.transform = `rotate(${minutesDegrees}deg)`;
 
